@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fans del Papel - Club de Lectura</title>
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="personal-styles.css" as="style">
+    <link rel="stylesheet" href="personal-styles.css">
+</head>
+<body>
+    
+    <header> 
+        <h1 class="titulo">Fans del Papel <span> Club de Lectura </span></h1> 
+    </header>
+    
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre el Club</a>
+            <a href="#">Comunidad</a>
+            <a href="#">Únete</a>
+        </nav>
+    </div>
+    
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2 class="titulo-hero">Explorando mundos <span>Página por página</span></h2>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+            </svg>
+            
+            <p>Un espacio creado por y para lectores</p>
+            <a href="#contacto" class="btn-hero">Participar</a>
+        </div>
+    </section>
+
+    <main class="contenedor sombra">
+        <h2 class="titulo-secciones">¿Qué hacemos en el club?</h2>
+        
+        <div class="actividades">
+            <section class="actividad">
+                <h3>Charlas Relajadas</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-principal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <p>Nos reunimos a platicar de nuestras lecturas favoritas. Todo es muy casual, ideal para quienes apenas empiezan a agarrarle el gusto a la lectura.</p>
+            </section>
+
+            <section class="actividad">
+                <h3>Mangas y Cómics</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-principal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="12" y1="3" x2="12" y2="12"></line>
+                </svg>
+                <p>No solo nos limitamos a los libros tradicionales. También exploramos novelas gráficas y leemos historias increíbles como el manga "The Climber" ("Kokou no Hito").</p>
+            </section>
+
+            <section class="actividad">
+                <h3>Trueque de Libros</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-principal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 3 21 3 21 8"></polyline>
+                    <line x1="4" y1="20" x2="21" y2="3"></line>
+                    <polyline points="21 16 21 21 16 21"></polyline>
+                    <line x1="15" y1="15" x2="21" y2="21"></line>
+                    <line x1="4" y1="4" x2="9" y2="9"></line>
+                </svg>
+                <p>Creemos que las historias deben circular. Trae los libros que ya terminaste y cámbialos por otro con los miembros del club.</p>
+            </section>
+        </div>
+    </main>
+
+    <section id="contacto" class="contenedor sombra">
+        <h2 class="titulo-secciones">Únete a nosotros</h2>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Déjanos tus datos para la próxima reunión</legend>
+                
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                </div>
+                
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com"> 
+                </div>
+                
+                <div class="campo">
+                    <label for="mensaje">¿Cuál es tu libro favorito?</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Cuéntanos un poco sobre tus gustos..."></textarea> 
+                </div>
+                
+                <div class="campo terminos">
+                    <label for="terminos">Acepto las normas de convivencia del club.</label>
+                    <input type="checkbox" name="terminos" id="terminos">
+                </div>
+                
+                <div class="alinear-derecha">
+                    <button type="submit" class="btn">Enviar mensaje</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+         <p>Una iniciativa de la comunidad. Fans del Papel. Admin: Brandon Balderas</p>
+    </footer>
+    
+</body>
+</html>
